@@ -1,10 +1,18 @@
-## React + Vite + TailwindCSS template
+## Feature Ideas:
 
-Create your own project based on this template by running:
+- Leading up to the event, the home page will be a count down timer/ rsvp 
+- Need to design the home page
+- Coffee menu with picture of drinks (pictures or drawn?)
+- Menu: Cards with title and photo only? react card style
+- Explanation of each drink when clicked. Maybe expanded card? 
 
-```bash
-npx degit quavedev/react-vite-tailwindcss-template your-project
-```
+Stretch: 
+- Ordering system built in 
+- Build in silly coffee/matcha personality quiz with the cute characters  ( need someone to draw them)
+- 
+## Deployment:
+ Deployment on Github pages. Under 1 GB, it will be free and can be hosted directly on the repo. 
+
 
 ## Install
 
@@ -31,13 +39,3 @@ Preview:
 ```bash
 npm run preview
 ```
-
-## Deploy on zCloud
-
-Create your account at [zcloud.ws](https://zcloud.ws).
-
-Connect to your GitHub, create your app and done!
-
-Push to Deploy.
-
-Or use the preconfigured [action](./.github/workflows/deploy.yaml) to deploy your app. Uncomment all the lines and add your zCloud User Token (ZCLOUD_USER_TOKEN) to your secrets on GitHub and replace `env` placeholder value with your app env name (check it on app.zcloud.ws > Your app env > Settings).

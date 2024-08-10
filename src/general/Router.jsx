@@ -3,7 +3,7 @@ import { RoutePaths } from "./RoutePaths.jsx";
 import { Home } from "../home/Home.jsx";
 import { NotFound } from "./NotFound.jsx";
 import { Layout } from "./Layout.jsx";
-import { Home2 } from "../home/Home2.jsx";
+import Header from "../components/Header.jsx";
 
 export const Router = () => (
   <Routes>
@@ -11,15 +11,24 @@ export const Router = () => (
       path={RoutePaths.HOME}
       element={
         <Layout>
-          <Home />
+         <Header/>
+         <Home />
         </Layout>
       }
     />
     <Route
-      path={RoutePaths.HOME2}
+      path={RoutePaths.MENU}
       element={
         <Layout>
-          <Home2 />
+         <Header/>
+        </Layout>
+      }
+    />
+     <Route
+      path={RoutePaths.GALLERY}
+      element={
+        <Layout>
+         <Header/>
         </Layout>
       }
     />

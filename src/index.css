@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 0.75rem;
+}
+
+.btn { 
+    display: inline-block;
+    color:black;
+    background-color: beige;
+    border: 2px solid ;
+    padding: 1rem 1.5rem;
+    border-radius: 10px
+}
+
+.btn:hover{ 
+    background-color: transparent;
+    color:tan;
+}
+

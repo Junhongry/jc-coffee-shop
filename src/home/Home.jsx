@@ -5,9 +5,9 @@ export const Home = () => {
     <div>
       <section className="home" id='home'>
         <div className="home-container container">
-          <div className="home-content">
-            <span className="home-subtitle">Welcome! </span>
-            <h1 className="home-title">  JC Coffee shop and bakery</h1>
+          <div className="home-content ">
+            <span className="home-subtitle  ">Welcome! </span>
+            <h1 className="home-title text-white" >  JC Coffee shop and bakery</h1>
            
             <div className="home-btns">
               <a href="menu" className="btn"> 

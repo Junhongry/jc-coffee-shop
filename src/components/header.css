@@ -8,7 +8,7 @@
 }
 
 .nav{
-    height: calc(var(--header-height) + 1.5rem);
+    height: 10%;
     background-color:burlywood;
     display:flex;
     align-items: center;
@@ -16,7 +16,7 @@
 } 
 
 .nav-logo-image { 
-    width: 190px;
+    width: 100px;
     /* mix-blend mode blends the image color to backgound color :) */
     mix-blend-mode: darken; 
 }
@@ -26,17 +26,7 @@
     column-gap: 2rem;
 }
 
-.nav-link,
-.nav-toggle{ 
-    color:black;
-}
 .nav-link{
     font-size: var(--large-font-size);
     font-weight: var(--weight-500);
-}
-
-.nav-toggle{
-    font-size: var(--h2-font-size);
-    display:none
-
 }

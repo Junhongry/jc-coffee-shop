@@ -4,6 +4,8 @@ import { Home } from "../home/Home.jsx";
 import { NotFound } from "./NotFound.jsx";
 import { Layout } from "./Layout.jsx";
 import Header from "../components/Header.jsx";
+import Menu from "../components/Menu.jsx";
+import NewHeader from "../components/NewHeader.jsx";
 
 export const Router = () => (
   <Routes>
@@ -11,7 +13,7 @@ export const Router = () => (
       path={RoutePaths.HOME}
       element={
         <Layout>
-         <Header/>
+         <NewHeader/>
          <Home />
         </Layout>
       }
@@ -20,7 +22,8 @@ export const Router = () => (
       path={RoutePaths.MENU}
       element={
         <Layout>
-         <Header/>
+         <NewHeader/>
+         <Menu/>
         </Layout>
       }
     />
@@ -28,7 +31,7 @@ export const Router = () => (
       path={RoutePaths.GALLERY}
       element={
         <Layout>
-         <Header/>
+         <NewHeader/>
         </Layout>
       }
     />

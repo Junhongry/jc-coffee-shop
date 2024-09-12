@@ -7,10 +7,10 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   console.log('open?',open)
   return (
-    <header className="header">
+    <header className="absolute left-0 top-0 bg-bisque w-full z-100  ">
       <nav className="nav container">
         <a href="/" className="nav-logo">
-          <img src={logo} alt="header" className="nav-logo-image" />
+          <img src alt="header" className="nav-logo-image" />
         </a>
         <div className="DESKTOP nav-menu hidden sm:flex">
           <ul className="nav-list">

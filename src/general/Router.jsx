@@ -3,9 +3,8 @@ import { RoutePaths } from "./RoutePaths.jsx";
 import { Home } from "../home/Home.jsx";
 import { NotFound } from "./NotFound.jsx";
 import { Layout } from "./Layout.jsx";
-import Header from "../components/Header.jsx";
-import Menu from "../components/Menu.jsx";
-import NewHeader from "../components/NewHeader.jsx";
+import Menu from "../pages/Menu.jsx";
+import NewHeader from "../pages/NewHeader.jsx";
 
 export const Router = () => (
   <Routes>

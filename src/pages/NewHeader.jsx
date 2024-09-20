@@ -14,9 +14,15 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom'; // Import Link
+import { RoutePaths } from '../general/RoutePaths'; // Adjust the import according to your project structure
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = [
+  { name: 'Home', path: RoutePaths.HOME },
+  { name: 'Menu', path: RoutePaths.MENU },
+  { name: 'Gallery', path: RoutePaths.GALLERY },
+];
 
 function NewHeader(props) {
   const { window } = props;
@@ -33,10 +39,10 @@ function NewHeader(props) {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+        {navItems.map(({ name, path }) => (
+          <ListItem key={name} disablePadding>
+            <ListItemButton sx={{ textAlign: 'center' }} component={Link} to={path}>
+              <ListItemText primary={name} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -68,9 +74,9 @@ function NewHeader(props) {
             MUI
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
+            {navItems.map(({ name, path }) => (
+              <Button key={name} sx={{ color: '#fff' }} component={Link} to={path}>
+                {name}
               </Button>
             ))}
           </Box>
@@ -95,10 +101,13 @@ function NewHeader(props) {
       </nav>
       <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
-        
       </Box>
     </Box>
   );
 }
+
+NewHeader.propTypes = {
+  window: PropTypes.func,
+};
 
 export default NewHeader;

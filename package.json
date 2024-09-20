@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "check": "eslint src --ext jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
